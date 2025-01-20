@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Martinoli</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" />
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-info" href="#home">David <span class="text-white">Mar</span>tinoli</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#portfolio">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#about">Sobre Mí</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ms-5">
+            <div class="icon-group">
+              <a href="https://www.linkedin.com/in/dmartinoli" target="_blank" class="text-white icon-link-hover">
+                <i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/david-martinoli" target="_blank" class="text-white icon-link-hover">
+                <i class="bi bi-github"></i></a>
+              <a href="#" onclick="copyEmail()" target="_blank" class="text-white icon-link-hover">
+                <i class="bi bi-envelope"></i></a>
+              <a href="https://twitter.com/dmartinoli_dev" target="_blank" class="text-white icon-link-hover">
+                <i class="bi bi-twitter-x"></i></a>
+            </div>
+      </div>
+      </li>
+    </div>
+
+    </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold">David Martinoli</h1>
+          <div class="typing-container">
+            <p class="lead" id="typed-subtitle" data-typed-items="Desarrollo de Software,"></p>
+          </div>
+          <a href="#portfolio" class="btn btn-info text-dark fw-bold">Proyectos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="text-center mb-5 font-heading">Proyectos</h2>
+      <div class="row g-4">
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-4">
+          <div class="card portfolio-item h-100 border bg-dark p-2 text-white">
+            <a href="https://play.google.com/store/apps/details?id=com.DMARTINOLI.SpaceBlaster" target="_blank">
+              <img src="img/portfolio/SpaceBlaster.png" class="card-img-top" alt="Project 1" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Space Blaster</h5>
+              <p class="card-text">
+                Pequeño videojuego desarrollado para Android publicado en
+                <a href="https://play.google.com/store/apps/details?id=com.DMARTINOLI.SpaceBlaster">Google Play</a>, en
+                el que controlas una nave, destruyes asteroides, sumas
+                puntos y lo comparas con el alcanzado por otras personas en
+                una tabla online.
+              </p>
+              <div class="tags">
+                <span class="badge bg-info text-dark">Unity</span>
+                <span class="badge bg-info text-dark">C#</span>
+                <span class="badge bg-info text-dark">Java</span>
+                <span class="badge bg-info text-dark">Android</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item 2 -->
+
+        <div class="col-md-4">
+          <div class="card portfolio-item h-100 border bg-dark p-2 text-white">
+            <a href="https://github.com/David-Martinoli/ToDoList" target="_blank">
+              <img src="img/portfolio/TasksApp.png" class="card-img-top" alt="Project 2" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Tasks App</h5>
+              <p class="card-text">
+                Aplicación de gestión de tareas desarrollada con Python y
+                SQLite.
+              </p>
+              <div class="tags">
+                <span class="badge bg-info text-dark">Python</span>
+                <span class="badge bg-info text-dark">SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-4">
+          <div class="card portfolio-item h-100 border bg-dark p-2 text-white">
+            <img src="https://via.assets.so/img.jpg?w=500&h=500&tc=gray&bg=#cecece&t=Placeholder" 
+            class="card-img-top" alt="Project 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Descripción breve del proyecto</p>
+              <div class="tags">
+                <span class="badge bg-info text-dark">HTML</span>
+                <span class="badge bg-info text-dark">CSS</span>
+                <span class="badge bg-info text-dark">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="text-center mb-5">Sobre Mí</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img alt="About Me" class="square-img rounded shadow" src="https://via.assets.so/img.jpg?w=500&h=500&tc=gray&bg=#cecece&t=Placeholder" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-4">Perfil</h3>
+          <p>
+            Analítico, metódico, curioso, son algunas de las características
+            con las que me puedo describir. Me interesa aprender
+            constantemente y brindar toda mi capacidad. Ofrezco disposición,
+            seriedad y compromiso.
+          </p>
+          <div class="skills mt-5">
+            <h4></h4>
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Habilidades Técnicas</h4>
+                <div class="tags">
+                  <span class="badge bg-info text-dark">C#</span>
+                  <span class="badge bg-info text-dark">.NET</span>
+                  <span class="badge bg-info text-dark">ASP.NET Core</span>
+                  <span class="badge bg-info text-dark">Blazor</span>
+                  <span class="badge bg-info text-dark">Entity Framework</span>
+                  <span class="badge bg-info text-dark">Unity</span>
+                  <span class="badge bg-info text-dark">Python</span>
+                  <span class="badge bg-info text-dark">Swagger</span>
+                  <span class="badge bg-info text-dark">Java</span>
+                  <span class="badge bg-info text-dark">Spring Boot</span>
+                  <span class="badge bg-info text-dark">SQL</span>
+                  <span class="badge bg-info text-dark">SQLite</span>
+                  <span class="badge bg-info text-dark">Firebase</span>
+                  <span class="badge bg-info text-dark">Git</span>
+                  <span class="badge bg-info text-dark">HTML</span>
+                  <span class="badge bg-info text-dark">CSS</span>
+                  <span class="badge bg-info text-dark">JavaScript</span>
+                  <span class="badge bg-info text-dark">GNU/Linux</span>
+                  <span class="badge bg-info text-dark">Docker</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h4>Habilidades Blandas</h4>
+                <div class="tags">
+                  <span class="badge bg-light text-dark">Pensamiento crítico</span>
+                  <span class="badge bg-light text-dark">Escucha Activa</span>
+                  <span class="badge bg-light text-dark">Cortesía</span>
+                  <span class="badge bg-light text-dark">Empatía</span>
+                  <span class="badge bg-light text-dark">Atención al detalle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 David Martinoli.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.module.min.js"></script> -->
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

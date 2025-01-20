@@ -1,0 +1,195 @@
+/* General Styles */
+:root {
+    --color-background: #f9fafb; 
+    --color-background-dark: #1f2937; 
+    --color-text: #ffffff; 
+    --color-text-light: #ffffff8a; 
+    --color-accent: #d73bf6; 
+    --color-accent-light: skyblue; 
+    --color-accent-dark: #1e40af; 
+    --color-success: #22c55e; 
+    --color-warning: #f59e0b; 
+    --color-danger: #ef4444; 
+    --color-info: #31d2f2; 
+    --font-main: 'Courier New', monospace;
+    --font-heading: 'Console', monospace; 
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-background-dark);
+    color: var(--color-text);
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+    background-color: var(--color-background-dark);
+}
+
+.navbar .nav-link {
+    color: var(--color-text);
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-accent-light);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.icon-link-hover:hover i{
+    color: var(--color-info); 
+    transform: scale(1.2) !important; 
+    transition: all 0.3s ease-in-out; 
+  }
+
+
+section {
+    height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding-top: 60px;
+    background-color: var(--color-background);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-color: var(--color-background-dark);
+    padding: 0 1rem;
+    background-image: url('../img/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-section h1,
+.hero-section .lead,
+.hero-section .btn {
+    animation: fadeIn 1s ease forwards;
+    color: var(--color-text);
+}
+
+.hero-section h1 {
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    padding-left: 0;
+}
+
+.hero-section .lead {
+    color: var(--color-text-light);
+    margin: 0;
+    padding: 0;
+}
+
+.typing-container {
+    min-height: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.typed-cursor {
+    font-size: 1.5rem;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    margin-left: 2px;
+    vertical-align: middle;
+    line-height: 1.5rem;
+}
+
+/* Defines the blink animation */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: var(--color-background-dark); 
+}
+.portfolio-item {
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-item img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* About Section */
+#about {
+    background-color: var(--color-background-dark); 
+}
+
+.card-img-top {
+    object-fit: cover;
+    object-position: top center;
+    height: 200px;
+}
+
+#about img {
+    border-radius: 5px;
+    width: 500px !important;
+    height: 500px !important;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.tags span {
+    border-radius: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .hero-section img {
+        margin-top: 2rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent-light);
+}
