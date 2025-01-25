@@ -25,16 +25,17 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#home">Inicio</a>
+            <a class="nav-link fw-bold" href="#hero">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-bold" href="#portfolio">Proyectos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item pe-5">
             <a class="nav-link fw-bold" href="#about">Sobre Mí</a>
           </li>
-          <li class="nav-item d-flex align-items-center ms-5">
-            <div class="icon-group">
+          <!-- <li class="nav-item d-flex align-items-center ms-5"> -->
+            <li class="nav-item">
+            <div class="icon-group nav-link">
               <a href="https://www.linkedin.com/in/dmartinoli" target="_blank" class="text-white icon-link-hover">
                 <i class="bi bi-linkedin"></i></a>
               <a href="https://github.com/david-martinoli" target="_blank" class="text-white icon-link-hover">
@@ -53,8 +54,8 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <div class="container h-100">
+  <section id="hero" class="hero-section my-5">
+    <div class="container vh-100 py-5">
       <div class="row h-100 align-items-center">
         <div class="col-md-6">
           <h1 class="display-4 fw-bold">David Martinoli</h1>
@@ -68,15 +69,15 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section id="portfolio">
-    <div class="container">
-      <h2 class="text-center mb-5 font-heading">Proyectos</h2>
+  <section id="portfolio" class="py-5">
+    <div class="container py-5">
+      <h2  class="text-center font-heading pb-5">Proyectos</h2>
       <div class="row g-4">
         <!-- Portfolio Item 1 -->
         <div class="col-md-4">
-          <div class="card portfolio-item h-100 border bg-dark p-2 text-white">
+          <div class="card portfolio-item  border bg-dark p-2 text-white h-100">
             <a href="https://play.google.com/store/apps/details?id=com.DMARTINOLI.SpaceBlaster" target="_blank">
-              <img src="img/portfolio/SpaceBlaster.png" class="card-img-top" alt="Project 1" />
+              <img src="img/portfolio/SpaceBlaster.png" class="card-img" alt="Project 1" />
             </a>
             <div class="card-body">
               <h5 class="card-title">Space Blaster</h5>
@@ -99,9 +100,9 @@
         <!-- Portfolio Item 2 -->
 
         <div class="col-md-4">
-          <div class="card portfolio-item h-100 border bg-dark p-2 text-white">
+          <div class="card portfolio-item border bg-dark p-2 text-white h-100">
             <a href="https://github.com/David-Martinoli/ToDoList" target="_blank">
-              <img src="img/portfolio/TasksApp.png" class="card-img-top" alt="Project 2" />
+              <img src="img/portfolio/TasksApp.png" class="card-img" alt="Project 2" />
             </a>
             <div class="card-body">
               <h5 class="card-title">Tasks App</h5>
@@ -110,7 +111,7 @@
                 SQLite.
               </p>
               <div class="tags">
-                <span class="badge bg-info text-dark">Python</span>
+                <span class="badge rounded bg-info text-dark">Python</span>
                 <span class="badge bg-info text-dark">SQLite</span>
               </div>
             </div>
@@ -119,9 +120,9 @@
 
         <!-- Portfolio Item 3 -->
         <div class="col-md-4">
-          <div class="card portfolio-item h-100 border bg-dark p-2 text-white">
+          <div class="card portfolio-item border bg-dark p-2 text-white h-100">
             <img src="https://via.assets.so/img.jpg?w=500&h=500&tc=gray&bg=#cecece&t=Placeholder" 
-            class="card-img-top" alt="Project 3" />
+            class="card-img" alt="Project 3" />
             <div class="card-body">
               <h5 class="card-title">Proyecto 3</h5>
               <p class="card-text">Descripción breve del proyecto</p>
@@ -133,32 +134,31 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
   </section>
 
   <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2 class="text-center mb-5">Sobre Mí</h2>
+  <section id="about" class="py-5">
+    <div class="container py-5">
+      <h2 class="text-center pb-5">Sobre Mí</h2>
       <div class="row">
         <div class="col-md-6">
-          <img alt="About Me" class="square-img rounded shadow" src="https://via.assets.so/img.jpg?w=500&h=500&tc=gray&bg=#cecece&t=Placeholder" />
+          <img alt="About Me" class="img-fluid rounded shadow" src="https://via.assets.so/img.jpg?w=500&h=500&tc=gray&bg=#cecece&t=Placeholder" />
         </div>
         <div class="col-md-6">
-          <h3 class="mb-4">Perfil</h3>
+          <h3 class="my-5">Perfil</h3>
           <p>
             Analítico, metódico, curioso, son algunas de las características
             con las que me puedo describir. Me interesa aprender
             constantemente y brindar toda mi capacidad. Ofrezco disposición,
             seriedad y compromiso.
           </p>
-          <div class="skills mt-5">
-            <h4></h4>
+          <div class="skills my-5">
             <div class="row">
               <div class="col-md-6">
-                <h4>Habilidades Técnicas</h4>
-                <div class="tags">
+                <h4 class="">Habilidades Técnicas</h4>
+                <div class="tags my-4">
                   <span class="badge bg-info text-dark">C#</span>
                   <span class="badge bg-info text-dark">.NET</span>
                   <span class="badge bg-info text-dark">ASP.NET Core</span>
@@ -182,7 +182,7 @@
               </div>
               <div class="col-md-6">
                 <h4>Habilidades Blandas</h4>
-                <div class="tags">
+                <div class="tags my-4">
                   <span class="badge bg-light text-dark">Pensamiento crítico</span>
                   <span class="badge bg-light text-dark">Escucha Activa</span>
                   <span class="badge bg-light text-dark">Cortesía</span>
@@ -193,9 +193,9 @@
             </div>
           </div>
 
-        </div>
-      </div>
-    </div>
+        </div> <!-- /.col-md-6 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
   </section>
 
   <!-- Footer -->
