@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+<!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold text-info" href="#home">David <span class="text-white">Mar</span>tinoli</a>
@@ -36,13 +36,13 @@
           <!-- <li class="nav-item d-flex align-items-center ms-5"> -->
             <li class="nav-item">
             <div class="icon-group nav-link">
-              <a href="https://www.linkedin.com/in/dmartinoli" target="_blank" class="text-white icon-link-hover">
+              <a href="https://www.linkedin.com/in/dmartinoli" target="_blank" class="text-white icon-link-hover mx-1">
                 <i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/david-martinoli" target="_blank" class="text-white icon-link-hover">
+              <a href="https://github.com/david-martinoli" target="_blank" class="text-white icon-link-hover mx-1">
                 <i class="bi bi-github"></i></a>
-              <a href="#" onclick="copyEmail()" target="_blank" class="text-white icon-link-hover">
+              <a href="#" onclick="copyEmail()" target="_blank" class="text-white icon-link-hover mx-1">
                 <i class="bi bi-envelope"></i></a>
-              <a href="https://twitter.com/dmartinoli_dev" target="_blank" class="text-white icon-link-hover">
+              <a href="https://twitter.com/dmartinoli_dev" target="_blank" class="text-white icon-link-hover mx-1">
                 <i class="bi bi-twitter-x"></i></a>
             </div>
       </div>
@@ -121,15 +121,18 @@
         <!-- Portfolio Item 3 -->
         <div class="col-md-4">
           <div class="card portfolio-item border bg-dark p-2 text-white h-100">
-            <img src="https://via.assets.so/img.jpg?w=500&h=500&tc=gray&bg=#cecece&t=Placeholder" 
+            <img src="/img/portfolio/SamplePOS.png" 
             class="card-img" alt="Project 3" />
             <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Descripción breve del proyecto</p>
+              <h5 class="card-title">Sample POS</h5>
+              <p class="card-text">Versión simplificada de un punto de venta.</p>
               <div class="tags">
-                <span class="badge bg-info text-dark">HTML</span>
-                <span class="badge bg-info text-dark">CSS</span>
-                <span class="badge bg-info text-dark">JavaScript</span>
+                <span class="badge bg-info text-dark">ASP.NET CORE</span>
+                <span class="badge bg-info text-dark">Blazor</span>
+                <span class="badge bg-info text-dark">Bootstrap</span>
+                <span class="badge bg-info text-dark">Entity Framework</span>
+                <span class="badge bg-info text-dark">SQLite</span>
+                <span class="badge bg-info text-dark">MVVM</span>
               </div>
             </div>
           </div>
@@ -140,11 +143,13 @@
 
   <!-- About Section -->
   <section id="about" class="py-5">
-    <div class="container py-5">
+    <div class="container  py-5">
       <h2 class="text-center pb-5">Sobre Mí</h2>
       <div class="row">
         <div class="col-md-6">
-          <img alt="About Me" class="img-fluid rounded shadow" src="https://via.assets.so/img.jpg?w=500&h=500&tc=gray&bg=#cecece&t=Placeholder" />
+          <div id="about-image-container" class="rounded">
+          <img id="about-image" class="img-fluid" src="https://placehold.co/500/000000/FFFFFF.png" />
+        </div>
         </div>
         <div class="col-md-6">
           <h3 class="my-5">Perfil</h3>
@@ -168,8 +173,9 @@
                   <span class="badge bg-info text-dark">Python</span>
                   <span class="badge bg-info text-dark">Swagger</span>
                   <span class="badge bg-info text-dark">Java</span>
-                  <span class="badge bg-info text-dark">Spring Boot</span>
+                  <span class="badge bg-info text-dark">Spring</span>
                   <span class="badge bg-info text-dark">SQL</span>
+                  <span class="badge bg-info text-dark">PostgreSQL</span>
                   <span class="badge bg-info text-dark">SQLite</span>
                   <span class="badge bg-info text-dark">Firebase</span>
                   <span class="badge bg-info text-dark">Git</span>
@@ -201,7 +207,17 @@
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container text-center">
-      <p class="mb-0">&copy; 2025 David Martinoli.</p>
+      <!-- <p class="mb-0">&copy; 2025 David Martinoli.</p> -->
+
+        <a href="https://www.linkedin.com/in/dmartinoli" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
+          <i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/david-martinoli" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
+          <i class="bi bi-github"></i></a>
+        <a href="#" onclick="copyEmail()" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
+          <i class="bi bi-envelope"></i></a>
+        <a href="https://twitter.com/dmartinoli_dev" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
+          <i class="bi bi-twitter-x"></i></a>
+
     </div>
   </footer>
 
