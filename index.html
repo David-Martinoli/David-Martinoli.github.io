@@ -4,6 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:title" content="Portfolio David Martinoli" />
+  <meta property="og:description" content="Sitio personal en el que iré publicando proyectos a modo de portfolio." />
+  <meta property="og:image" content="https://david-martinoli.github.io/img/sitepreview.png" />
+  <meta property="og:url" content="https://david-martinoli.github.io" />
+
+
   <title>David Martinoli</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,7 +22,7 @@
 </head>
 
 <body>
-<!-- Navbar -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold text-info" href="#home">David <span class="text-white">Mar</span>tinoli</a>
@@ -33,8 +40,7 @@
           <li class="nav-item pe-5">
             <a class="nav-link fw-bold" href="#about">Sobre Mí</a>
           </li>
-          <!-- <li class="nav-item d-flex align-items-center ms-5"> -->
-            <li class="nav-item">
+          <li class="nav-item">
             <div class="icon-group nav-link">
               <a href="https://www.linkedin.com/in/dmartinoli" target="_blank" class="text-white icon-link-hover mx-1">
                 <i class="bi bi-linkedin"></i></a>
@@ -48,11 +54,9 @@
       </div>
       </li>
     </div>
-
     </div>
     </div>
   </nav>
-
   <!-- Hero Section -->
   <section id="hero" class="hero-section my-5">
     <div class="container vh-100 py-5">
@@ -71,7 +75,7 @@
   <!-- Portfolio Section -->
   <section id="portfolio" class="py-5">
     <div class="container py-5">
-      <h2  class="text-center font-heading pb-5">Proyectos</h2>
+      <h2 class="text-center font-heading pb-5">Proyectos</h2>
       <div class="row g-4">
         <!-- Portfolio Item 1 -->
         <div class="col-md-4">
@@ -91,14 +95,11 @@
               <div class="tags">
                 <span class="badge bg-info text-dark">Unity</span>
                 <span class="badge bg-info text-dark">C#</span>
-                <span class="badge bg-info text-dark">Java</span>
-                <span class="badge bg-info text-dark">Android</span>
               </div>
             </div>
           </div>
         </div>
         <!-- Portfolio Item 2 -->
-
         <div class="col-md-4">
           <div class="card portfolio-item border bg-dark p-2 text-white h-100">
             <a href="https://github.com/David-Martinoli/ToDoList" target="_blank">
@@ -113,24 +114,24 @@
               <div class="tags">
                 <span class="badge rounded bg-info text-dark">Python</span>
                 <span class="badge bg-info text-dark">SQLite</span>
+                <span class="badge bg-info text-dark">SQLAlchemy</span>
               </div>
             </div>
           </div>
         </div>
-
         <!-- Portfolio Item 3 -->
         <div class="col-md-4">
           <div class="card portfolio-item border bg-dark p-2 text-white h-100">
-            <img src="/img/portfolio/SamplePOS.png" 
-            class="card-img" alt="Project 3" />
+            <img src="/img/portfolio/SamplePOS.png" class="card-img" alt="Project 3" />
             <div class="card-body">
               <h5 class="card-title">Sample POS</h5>
               <p class="card-text">Versión simplificada de un punto de venta.</p>
               <div class="tags">
-                <span class="badge bg-info text-dark">ASP.NET CORE</span>
+                <span class="badge bg-info text-dark">ASP.NET Core</span>
+                <span class="badge bg-info text-dark">C#</span>
                 <span class="badge bg-info text-dark">Blazor</span>
                 <span class="badge bg-info text-dark">Bootstrap</span>
-                <span class="badge bg-info text-dark">Entity Framework</span>
+                <span class="badge bg-info text-dark">Entity Framework Core</span>
                 <span class="badge bg-info text-dark">SQLite</span>
                 <span class="badge bg-info text-dark">MVVM</span>
               </div>
@@ -140,7 +141,6 @@
       </div> <!-- /.row -->
     </div> <!-- /.container -->
   </section>
-
   <!-- About Section -->
   <section id="about" class="py-5">
     <div class="container  py-5">
@@ -148,8 +148,8 @@
       <div class="row">
         <div class="col-md-6">
           <div id="about-image-container" class="rounded">
-          <img id="about-image" class="img-fluid" src="https://placehold.co/500/000000/FFFFFF.png" />
-        </div>
+            <img id="about-image" class="img-fluid" src="https://placehold.co/500/000000/FFFFFF.png" />
+          </div>
         </div>
         <div class="col-md-6">
           <h3 class="my-5">Perfil</h3>
@@ -198,35 +198,33 @@
               </div>
             </div>
           </div>
-
         </div> <!-- /.col-md-6 -->
       </div> <!-- /.row -->
     </div> <!-- /.container -->
   </section>
-
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container text-center">
-      <!-- <p class="mb-0">&copy; 2025 David Martinoli.</p> -->
-
-        <a href="https://www.linkedin.com/in/dmartinoli" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
-          <i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/david-martinoli" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
-          <i class="bi bi-github"></i></a>
-        <a href="#" onclick="copyEmail()" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
-          <i class="bi bi-envelope"></i></a>
-        <a href="https://twitter.com/dmartinoli_dev" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
-          <i class="bi bi-twitter-x"></i></a>
-
+      <a href="https://www.linkedin.com/in/dmartinoli" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/david-martinoli" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="#" onclick="copyEmail()" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://twitter.com/dmartinoli_dev" target="_blank" class="text-white icon-link-hover fs-5 mx-1">
+        <i class="bi bi-twitter-x"></i>
+      </a>
     </div>
   </footer>
-
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!-- Typed JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.module.min.js"></script> -->
   <!-- Custom JS -->
   <script src="js/main.js"></script>
 </body>
